@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>DNF_AuctionClass</class>
+ <widget class="QWidget" name="DNF_AuctionClass" >
+  <property name="objectName" >
+   <string notr="true">DNF_AuctionClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>DNF_Auction</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="DNF_Auction.qrc"/>
+ </resources>
+ <connections/>
+</UI>
