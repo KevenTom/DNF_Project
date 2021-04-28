@@ -1,5 +1,5 @@
-#include "DNF_Auction.h"
 #include <QtWidgets/QApplication>
+#include "DNF_Auction.h"
 
 int main(int argc, char *argv[])
 {
