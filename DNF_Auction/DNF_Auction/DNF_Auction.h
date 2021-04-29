@@ -1,9 +1,9 @@
 #pragma once
 
 #include <QtWidgets/QWidget>
-#include <QLabel>
 
 #include "ui_DNF_Auction.h"
+#include "AuctionItemList.h"
 
 
 class DNF_Auction : public QWidget
@@ -15,11 +15,9 @@ public:
     ~DNF_Auction();
 
 public:
-    Ui::DNF_AuctionClass ui;
+    //Ui::DNF_AuctionClass ui;
 
-    QLabel itemimage;
-    QLabel Description;
-    QLabel costing;
+    AuctionItemList* testitemlist;
 
 public:
 
