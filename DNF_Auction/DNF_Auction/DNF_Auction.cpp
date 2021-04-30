@@ -5,9 +5,14 @@ DNF_Auction::DNF_Auction(QWidget* parent)
 {
     //ui.setupUi(this);
     setWindowTitle("DNF_Auction Widget");
+    setLayout(&itemlistlayout);
 
-    testitemlist = new AuctionItemList(this);
+    for (int i = 0; i < *testcount; ++i)
+    {
+        auctuinitemarray.push_back(new AuctionItemList(i, this));
 
+        itemlistlayout.addWidget(auctuinitemarray[i]);
+    }
 }
 
 DNF_Auction::~DNF_Auction()

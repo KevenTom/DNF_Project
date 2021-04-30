@@ -1,8 +1,9 @@
 #pragma once
 
 #include <QtWidgets/QWidget>
+#include <QVBoxLayout>
 
-#include "ui_DNF_Auction.h"
+//#include "ui_DNF_Auction.h"
 #include "AuctionItemList.h"
 
 
@@ -17,7 +18,10 @@ public:
 public:
     //Ui::DNF_AuctionClass ui;
 
-    AuctionItemList* testitemlist;
+    QVBoxLayout itemlistlayout;
+    QVector<AuctionItemList*> auctuinitemarray;
+    int* testcount = new int(5);
+
 
 public:
 

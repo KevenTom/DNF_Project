@@ -1,20 +1,20 @@
 #include "AuctionItemList.h"
 
-AuctionItemList::AuctionItemList(QWidget* parent)
+AuctionItemList::AuctionItemList(int profit, QWidget* parent)
     //: QHBoxLayout(parent), itemimage(parent), Description(parent), costing(parent) //addwidget만으로 작동 되니까 나중에 addwidget이 부모,자식 역할을 동시에 해주는지, 메모리 할당 취소할때 동일하게 작동하는지 테스트
-    : QHBoxLayout(parent)
+    : QWidget(parent)
 {
-    itemimage.setParent(parent);
-    Description.setParent(parent);
-    costing.setParent(parent);
+    setLayout(&mainlayout);
+    
+    mainlayout.addWidget(&itemimage);
+    mainlayout.addWidget(&Description);
+    mainlayout.addWidget(&costing);
 
     itemimage.setPixmap(QPixmap("resources/browser.png"));
-    Description.setText("test textt");
-    costing.setText("1234");
 
-    addWidget(&itemimage);
-    addWidget(&Description);
-    addWidget(&costing);
+    QString inttoqstring;
+    Description.setText(inttoqstring.setNum(profit));
+    costing.setText(inttoqstring.setNum(profit));
 }
 
 AuctionItemList::~AuctionItemList()
