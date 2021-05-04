@@ -43,9 +43,21 @@
     <ClCompile Include="AuctionItemList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ItemDelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="AuctionItemList.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ItemModel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ItemDelegate.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

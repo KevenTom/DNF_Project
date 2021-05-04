@@ -2,6 +2,9 @@
 
 #include <QHBoxLayout>
 #include <QLabel>
+#include <QPainter>
+#include <QPolygonF>
+#include <QSize>
 
 class AuctionItemList : public QWidget
 {
@@ -9,12 +12,14 @@ class AuctionItemList : public QWidget
 
 public:
 	AuctionItemList(int profit, QWidget* parent = Q_NULLPTR);
-	~AuctionItemList();
 
+	enum class EditMode { Editable, ReadOnly };
+	void paint(QPainter* painter, const QRect& rect, const QPalette& palette, EditMode mode) const;
+	QSize sizeHint() const;
 public:
 	QHBoxLayout mainlayout;
 
-	QLabel itemimage;	//정적변수라도 부모를 설정해줘야 한다.
+	QLabel itemimage;
 	QLabel Description;
 	QLabel costing;
 

@@ -90,10 +90,16 @@
     <QtMoc Include="DNF_Auction.h" />
     <ClCompile Include="AuctionItemList.cpp" />
     <ClCompile Include="DNF_Auction.cpp" />
+    <ClCompile Include="ItemDelegate.cpp" />
+    <ClCompile Include="ItemModel.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="AuctionItemList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ItemDelegate.h" />
+    <QtMoc Include="ItemModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -16,7 +16,3 @@ AuctionItemList::AuctionItemList(int profit, QWidget* parent)
     Description.setText(inttoqstring.setNum(profit));
     costing.setText(inttoqstring.setNum(profit));
 }
-
-AuctionItemList::~AuctionItemList()
-{
-}
