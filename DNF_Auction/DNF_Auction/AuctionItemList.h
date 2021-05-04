@@ -13,9 +13,6 @@ class AuctionItemList : public QWidget
 public:
 	AuctionItemList(int profit, QWidget* parent = Q_NULLPTR);
 
-	enum class EditMode { Editable, ReadOnly };
-	void paint(QPainter* painter, const QRect& rect, const QPalette& palette, EditMode mode) const;
-	QSize sizeHint() const;
 public:
 	QHBoxLayout mainlayout;
 

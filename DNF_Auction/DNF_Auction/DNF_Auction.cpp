@@ -15,12 +15,14 @@ DNF_Auction::DNF_Auction(QWidget* parent)
         itemlistlayout.addWidget(auctuinitemarray[i]);
     }
 
-
     testview.setModel(&testmodel);
     testview.setItemDelegate(&testdelegate);
-    testview.setSelectionMode(QAbstractItemView::NoSelection);  //각종 옵션 설정 나중에 델리게이트 만들고 난 후에 이어서
+    //testview.setSelectionMode(QAbstractItemView::NoSelection);  //각종 옵션 설정 나중에 델리게이트 만들고 난 후에 이어서
 
-    testview.show();
+    //testview.show();
+
+    itemlistlayout.addWidget(&testview);
+
 }
 
 DNF_Auction::~DNF_Auction()
